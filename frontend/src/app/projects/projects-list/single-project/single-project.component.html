@@ -1,0 +1,72 @@
+<div  class="min-h-screen bg-[#0c0c0c] py-24 px-4 flex justify-center items-start">
+  <div
+    *ngIf="project"
+    class="w-full max-w-3xl rounded-xl shadow-md shadow-gray-800 p-6 transition-all animate-fade-in-up hover:scale-[1.01] hover:shadow-lg"
+    [ngClass]="{
+      'bg-[#1a1a1a] text-white': !userHasLiked,
+      'bg-[#ccf4e6] text-green-800': userHasLiked
+    }"
+  >
+    <!-- Back arrow -->
+    <a
+      routerLink="/projects"
+      class="inline-flex items-center gap-2 mb-6 text-orange-400 hover:text-orange-300 group transition"
+    >
+      <svg
+        class="w-5 h-5 group-hover:-translate-x-1 transition-transform"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="orange"
+        viewBox="0 0 24 24"
+      >
+        <path d="M15 18l-6-6 6-6" />
+      </svg>
+      <span
+        class="opacity-0 group-hover:opacity-100 group-hover:translate-x-0 -translate-x-1 transition-all duration-300 text-sm"
+      >
+        Back
+      </span>
+    </a>
+
+    <!-- Title + image -->
+    <h2 class="text-2xl font-semibold mb-4">{{ project.title | titlecase }}</h2>
+    <img
+      [alt]="project.title"
+      [src]="project.imageURL"
+      class="w-full rounded-md mb-4"
+    />
+
+    <!-- Description -->
+    <!-- <p class="mb-2">{{ project.description }}</p> -->
+    <p class="mb-4 ">
+      
+      <a
+        class="inline-flex items-center gap-2 bg-[#24292f] text-white text-sm font-medium px-3 py-1 rounded-full hover:bg-[#444c56] transition"
+        [ngClass]="userHasLiked ? 'text-green-700' : 'text-blue-400'"
+        [href]="project.projectLink"
+        target="_blank"
+        rel="noopener"
+      >
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="white" viewBox="0 0 24 24">
+        <path d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.4 7.85 10.94.57.1.78-.24.78-.55v-1.94c-3.2.7-3.87-1.39-3.87-1.39-.52-1.32-1.28-1.67-1.28-1.67-1.04-.72.08-.7.08-.7 1.15.08 1.75 1.18 1.75 1.18 1.02 1.75 2.67 1.24 3.32.95.1-.74.4-1.24.72-1.52-2.55-.3-5.24-1.28-5.24-5.72 0-1.26.45-2.29 1.18-3.1-.12-.3-.51-1.52.11-3.18 0 0 .96-.31 3.15 1.18a10.9 10.9 0 0 1 5.73 0c2.18-1.49 3.15-1.18 3.15-1.18.63 1.66.24 2.88.12 3.18.73.81 1.18 1.84 1.18 3.1 0 4.45-2.69 5.42-5.26 5.71.41.35.77 1.05.77 2.12v3.13c0 .31.21.66.79.55A10.5 10.5 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5Z" />
+      </svg>
+      Dépôt GitHub
+      </a>
+    </p>
+
+    <!-- Like button -->
+    <div class="flex items-center gap-4">
+      <button
+        (click)="onLike()"
+        class="px-5 py-2 rounded-full font-medium border border-orange-400 text-orange-400 hover:bg-orange-400 hover:text-black transition"
+      >
+        {{ snapButtonText }}
+      </button>
+      <span
+        class="text-lg font-semibold"
+        [ngStyle]="{ color: 'rgb(0,' + project.likes + ',0)' }"
+      >
+        ❤️ {{ project.likes }}
+      </span>
+    </div>
+  </div>
+</div>

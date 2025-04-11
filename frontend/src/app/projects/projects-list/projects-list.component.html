@@ -1,0 +1,10 @@
+<div class="min-h-screen bg-[#0c0c0c] py-44 px-4 flex flex-col items-center gap-12">
+    <h1 class="text-4xl font-bold mb-8">
+      <span class="text-orange-500 mr-3">Mes</span> <span class="text-white">Projets</span>
+    </h1>
+  
+    @for (project of projects; track project.title) {
+      <app-projects [project]="project" class="w-full max-w-3xl" />
+    }
+  </div>
+  
