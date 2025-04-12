@@ -1,0 +1,40 @@
+<div class="min-h-screen bg-[#0c0c0c] py-24 px-6 flex flex-col items-center justify-center">
+    <div class="w-full max-w-5xl flex flex-col lg:flex-row items-center gap-12 animate-fade-in-up">
+      <!-- Photo -->
+      <div class="w-full max-w-sm rounded-2xl overflow-hidden shadow-lg shadow-orange-400/20">
+        <img src="/assets/images/photo_ricardo.jpg" alt="Ricardo Annis" class="w-full h-auto object-cover" />
+      </div>
+  
+      <!-- Texte A propos -->
+      <div class="text-white max-w-xl">
+        <h1 class="text-3xl lg:text-4xl font-bold mb-6">
+          <span class="text-orange-400">A Propos</span> De Moi
+        </h1>
+        <p class="text-gray-300 text-lg leading-relaxed">
+          👋 Je m'appelle <span class="font-semibold text-white">Ricardo Annis</span>, apprenti ingénieur en informatique au CNAM,
+          en partenariat avec l’ITII d’Alsace. Passionné par le développement et les technologies web, je suis actuellement
+          à la recherche d’une <span class="text-orange-400 font-semibold">alternance de 3 ans à partir de septembre 2025</span>. Curieux, motivé
+          et toujours prêt à relever de nouveaux défis, je souhaite intégrer une entreprise innovante dans laquelle je
+          pourrai mettre à profit mes compétences techniques tout en continuant à apprendre et à évoluer professionnellement.
+        </p>
+      </div>
+    </div>
+  </div>
+  
+  <style>
+  @keyframes fade-in-up {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .animate-fade-in-up {
+    animation: fade-in-up 0.8s ease-out both;
+  }
+  </style>
+  
