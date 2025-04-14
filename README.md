@@ -7,7 +7,7 @@ Il inclut également un formulaire de contact fonctionnel pour faciliter les éc
 
 ## 🖥️ Aperçu
 
-<img src="assets/images/portfolio-preview.png" alt="Aperçu du Portfolio" style="max-width:100%; border-radius: 12px; box-shadow: 0 0 12px rgba(255,255,255,0.1);" />
+<img src="src/assets/images/portfolio-angular.png" alt="Aperçu du Portfolio" style="max-width:100%; border-radius: 12px; box-shadow: 0 0 12px rgba(255,255,255,0.1);" />
 
 ---
 
@@ -84,8 +84,8 @@ src/
 
 - **Ricardo Annis**  
   👨‍💻 Apprenti Ingénieur Informatique – CNAM / ITII Alsace  
-  🌐 [Mon site web](https://www.ricardoannisworks.com)  
-  📧 Contact via le [formulaire](https://portfolio-ricardo.vercel.app/contact)
+  🌐 [Mon site web](https://portfolio-ric-app.onrender.com/)  
+  📧 Contact via le [formulaire](https://portfolio-ric-app.onrender.com/contact)
 
 ---
 
