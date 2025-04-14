@@ -3,7 +3,7 @@ import { ProjectType } from "./project-type.type";
 export class Project {
 
 
-  
+  optionalLink?: string;
   id: string;
 
   constructor(
@@ -34,6 +34,16 @@ export class Project {
     }
   }
 
+  setOptionalLink(link:string): void{
+    this.optionalLink = link;
+  }
+
+  whithOptinalLink(link:string): Project{
+    this.setOptionalLink(link);
+    return this;
+  }
+
+
   // ✅ Cette méthode permet de transformer un objet JSON en Project
   static fromJSON(json: any): Project {
     const project = new Project(
@@ -44,6 +54,7 @@ export class Project {
       json.likes
     );
     project.id = json.id || crypto.randomUUID().substring(0, 8);
+    project.optionalLink = json.optionalLink;
     return project;
   }
 }

@@ -1,27 +1,53 @@
 [
+
+  {
+    "id": "Projet Site E-Commerce | Angular",
+    "title": "Projet Site E-Commerce | Angular",
+    "description": "Application e-commerce développée en Angular permettant de naviguer dans un catalogue d’instruments de musique, d’ajouter des articles au panier, de les modifier ou les retirer. L’interface fluide et responsive offre une expérience utilisateur intuitive.",
+    "imageURL": "../assets/images/projet-site-e-commerce.png",
+    "projectLink":"https://github.com/Ricdrum14/TP05_ANNIS_Ricardo",
+    "optionalLink": "https://cnamapp-o53x.onrender.com",
+    "likes": 9
+  },{
+    "id": "Projet Site Portfolio | Angular",
+    "title": "Projet Site Portfolio | Angular",
+    "description": "Portfolio moderne développé avec Angular pour présenter mes projets, compétences et parcours. Interface fluide, responsive, et animations soignées pour une vitrine professionnelle élégante.",
+    "imageURL": "../assets/images/portfolio-angular.png",
+    "projectLink": "https://github.com/Arial-Games/-UnityProject-",
+    "optionalLink": "",
+    "likes": 20
+  },{
+    "id": "Projet Site Portfolio | PHP, JavaScript",
+    "title": "Projet Site Portfolio | PHP, JavaScript",
+    "description":"Portfolio en ligne interactif développé pour présenter mes projets, compétences et parcours. Responsive, moderne et conçu comme une vitrine professionnelle avec navigation fluide et design soigné.",
+    "imageURL": "../assets/images/portfolio-php.png",
+    "projectLink": "https://git.unistra.fr/rannis/ricardo-annis",
+    "optionalLink": "https://www.ricardoannisworks.com/projects.php",
+    "likes": 6
+  },
     {
-      "id": "darha",
-      "title": "Darha",
-      "description": "Mon amour de tous les temps",
-      "imageURL": "https://picsum.photos/1920/1083",
-      "projectLink": "https://ricardoapp.onrender.com",
-      "likes": 0
+      "id": "Projet Graphe Dual D'un Maillage | C",
+      "title": "Projet Graphe Dual D'un Maillage | C",
+      "description": "Graphe Dual d'un Maillage : Projet en C réalisé avec Inamullah Samoon. Il consiste à générer et visualiser des graphes duaux à partir de maillages géométriques, avec des algorithmes de parcours et d’analyse topologique avancée.",
+      "imageURL": "../assets/images/projet-graphe-dual-de-maillage.png",
+      "projectLink": "https://git.unistra.fr/samoon/graphe-dual-d-un-maillage-projet",
+      "likes": 16
     },
     {
-      "id": "ricardo",
-      "title": "Ricardo",
-      "description": "Mon Meilleur ami",
-      "imageURL": "https://picsum.photos/1920/1081",
-      "projectLink": "https://www.ricardoannisworks.com/",
-      "likes": 0
+      "id": "Projet Jeu de Mots Croisés | Java",
+      "title": "Projet Jeu de Mots Croisés | Java",
+      "description": "Mots Croisés en Java : Un jeu interactif développé avec Inamullah Samoon. Il génère dynamiquement des grilles de mots croisés avec une interface graphique intuitive. Ce projet met en œuvre la POO pour combiner logique, linguistique et plaisir.",
+      "imageURL": "../assets/images/projet-mot-croise.png",
+      "projectLink": "https://git.unistra.fr/samoon/projet_mots_croise_poo",
+      "likes": 4
     },
     {
-      "id": "lea",
-      "title": "Léa",
-      "description": "Ma petite sœur",
-      "imageURL": "https://picsum.photos/1920/1082",
-      "projectLink": "https://github.com/Arial-Games/-UnityProject-",
-      "likes": 0
+      "id": "Projet Jeu Sokoban | C",
+      "title": "Projet Jeu Sokoban | C",
+      "description": "Sokoban : Un jeu de réflexion en C développé en L2, où le joueur déplace des caisses dans un entrepôt selon des commandes clavier. Réalisé avec Sirine Amari à l’UFR Math-Info de Strasbourg, il propose un mode console et une version graphique en SDL.",
+      "imageURL": "../assets/images/projet-sokoban.png",
+      "projectLink": "https://git.unistra.fr/rannis/project_sokoban_sirine_et_ricardo",
+      "likes": 5
     }
   ]
   

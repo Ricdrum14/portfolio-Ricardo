@@ -20,58 +20,72 @@ import { CommonModule, NgClass, NgStyle, TitleCasePipe } from '@angular/common';
 export class SingleProjectComponent {
 
   project!: Project;
+  projectInitialLikes!: number;
   snapButtonText: string = 'like';
   userHasLiked: boolean = false;
 
-  constructor(private projectService: ProjectService, private route: ActivatedRoute, private router: Router){}
+  constructor(
+    private projectService: ProjectService,
+    private route: ActivatedRoute,
+    private router: Router
+  ) {}
 
   ngOnInit(): void {
-      
-      this.getProject();
+    this.getProject();
   }
 
-  
- onLike(): void{
-    if(this.userHasLiked){
-      this.unLike();
-    }
-    else{
-      this.like();
-    }
-    
-  }
-  
-  like(): void {
-    this.projectService
-      .likeProjectById(this.project.id, 'like')
-      .subscribe((updatedProject) => {
-        this.project = updatedProject;
-        this.snapButtonText = 'unLike';
-        this.userHasLiked = true;
-      });
-  }
-  
-  unLike(): void {
-    this.projectService
-      .likeProjectById(this.project.id, 'unLike')
-      .subscribe((updatedProject) => {
-        this.project = updatedProject;
-        this.snapButtonText = 'like';
-        this.userHasLiked = false;
-      });
-  }
-  
- 
   private getProject(): void {
     const projectId = this.route.snapshot.params['id'];
     this.projectService.getProjectById(projectId).subscribe({
       next: (project) => {
         this.project = project;
+        this.projectInitialLikes = project.likes;
+
+        const likedProjects = JSON.parse(localStorage.getItem('likedProjects') || '[]');
+        if (likedProjects.includes(project.id)) {
+          this.userHasLiked = true;
+          this.snapButtonText = 'unLike';
+          this.project.likes += 1;
+        }
       },
       error: () => {
         console.error('Project not found');
         this.router.navigateByUrl('/projects');
       },
     });
+  }
+
+  onLike(): void {
+    if (this.userHasLiked) {
+      this.unLike();
+    } else {
+      this.like();
+    }
+  }
+
+  like(): void {
+    if (this.userHasLiked) return;
+
+    this.userHasLiked = true;
+    this.snapButtonText = 'unLike';
+
+    const likedProjects = JSON.parse(localStorage.getItem('likedProjects') || '[]');
+    likedProjects.push(this.project.id);
+    localStorage.setItem('likedProjects', JSON.stringify(likedProjects));
+
+    this.project.likes += 1;
+  }
+
+  unLike(): void {
+    if (!this.userHasLiked) return;
+
+    this.userHasLiked = false;
+    this.snapButtonText = 'like';
+
+    const likedProjects = JSON.parse(localStorage.getItem('likedProjects') || '[]');
+    const updatedLikes = likedProjects.filter((id: string) => id !== this.project.id);
+    localStorage.setItem('likedProjects', JSON.stringify(updatedLikes));
+
+    this.project.likes = Math.max(this.project.likes - 1, this.projectInitialLikes);
   }
 }

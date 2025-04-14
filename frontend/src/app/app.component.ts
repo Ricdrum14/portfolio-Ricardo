@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
-import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from "./header/header.component";
 import { RouterOutlet } from '@angular/router';
+import { FooterComponent } from './footer/footer.component';
 
 
 @Component({
@@ -9,11 +9,12 @@ import { RouterOutlet } from '@angular/router';
   standalone: true,
   imports: [
     HeaderComponent,
-    RouterOutlet
+    RouterOutlet,
+    FooterComponent,
 ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'frontend';
+  title = 'Mon Portfolio';
 }
