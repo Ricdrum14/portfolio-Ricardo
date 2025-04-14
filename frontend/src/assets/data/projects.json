@@ -13,7 +13,7 @@
     "title": "Projet Site Portfolio | Angular",
     "description": "Portfolio moderne développé avec Angular pour présenter mes projets, compétences et parcours. Interface fluide, responsive, et animations soignées pour une vitrine professionnelle élégante.",
     "imageURL": "../assets/images/portfolio-angular.png",
-    "projectLink": "git@github.com:Ricdrum14/portfolio-ric-app.git",
+    "projectLink": "https://github.com/Ricdrum14/portfolio-Ricardo",
     "optionalLink": "https://portfolio-ric-app.onrender.com",
     "likes": 20
   },{
