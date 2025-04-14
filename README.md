@@ -7,7 +7,7 @@ Il inclut également un formulaire de contact fonctionnel pour faciliter les éc
 
 ## 🖥️ Aperçu
 
-<img src="src/assets/images/portfolio-angular.png" alt="Aperçu du Portfolio" style="max-width:100%; border-radius: 12px; box-shadow: 0 0 12px rgba(255,255,255,0.1);" />
+<img src="portfolio-angular.png" alt="Aperçu du Portfolio" style="max-width:100%; border-radius: 12px; box-shadow: 0 0 12px rgba(255,255,255,0.1);" />
 
 ---
 
