@@ -14,7 +14,7 @@
         type="text"
         id="name"
         name="user_name"
-        [(ngModel)]="formData.user_name"
+        [(ngModel)]="formData.name"
         required
         maxlength="50"
         pattern="^[a-zA-ZÀ-ÿ \-']{2,50}$"
@@ -29,7 +29,7 @@
         type="email"
         id="email"
         name="user_email"
-        [(ngModel)]="formData.user_email"
+        [(ngModel)]="formData.email"
         required
         maxlength="100"
         pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"

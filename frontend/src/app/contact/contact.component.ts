@@ -15,8 +15,8 @@ import emailjs from '@emailjs/browser';
 })
 export class ContactComponent {
   formData = {
-    user_name: '',
-    user_email: '',
+    name: '',
+    email: '',
     message: ''
   };
 
@@ -29,7 +29,7 @@ export class ContactComponent {
     ).then(
       () => {
         alert('Message envoyé avec succès ✅');
-        this.formData = { user_name: '', user_email: '', message: '' };
+        this.formData = { name: '', email: '', message: '' };
       },
       (error) => {
         console.error('Erreur:', error);
