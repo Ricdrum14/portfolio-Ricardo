@@ -83,7 +83,9 @@ src/
 ## 💼 Auteur
 
 - **Ricardo Annis**  
-  👨‍💻 Apprenti Ingénieur Informatique – CNAM / ITII Alsace  
+  👨‍💻 Ingénieur en Informatique et Systèmes d'Information – CNAM Strasbourg  
+  💼 Développeur Full-Stack | Chef de projet | Support & Admin IT  
+  🌍 À la recherche d'un stage à l'international (9 semaines minimum, juin – septembre 2027)  
   🌐 [Mon site web](https://portfolio-ric-app.onrender.com/)  
   📧 Contact via le [formulaire](https://portfolio-ric-app.onrender.com/contact)
 

@@ -41,6 +41,7 @@
       
       <!-- Lien principal -->
       <a
+        *ngIf="project.projectLink"
         class="inline-flex items-center gap-2 bg-[#24292f] text-white text-sm font-medium px-3 py-1 rounded-full hover:bg-[#444c56] transition mr-4"
         [ngClass]="userHasLiked ? 'text-green-700' : 'text-blue-400'"
         [href]="project.projectLink"

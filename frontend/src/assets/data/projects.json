@@ -1,14 +1,42 @@
 [
-
+  {
+    "id": "Projet Pollution Tracker | Angular, Node.js",
+    "title": "Projet Pollution Tracker | Angular, Node.js",
+    "description": "Application web de recensement des pollutions : déclaration, carte, statistiques et favoris, avec connexion utilisateur. Front Angular (NGXS), API Node.js / Express, base PostgreSQL, authentification JWT et déploiement Docker sur Render.",
+    "imageURL": "../assets/images/projet-pollution-tracker.png",
+    "likes": 0
+  },
+  {
+    "id": "Projet Jeux de Grille | C++, Qt",
+    "title": "Projet Jeux de Grille | C++, Qt",
+    "description": "Morpion, Puissance 4, Othello et Dames en C++ avec Qt, développés d'abord seul, puis à deux, puis en équipe de 4. Architecture SOLID : fabrique de jeux extensible, interfaces séparées, IA interchangeable, sauvegarde et chargement de parties, interface console ou Qt.",
+    "imageURL": "../assets/images/projet-jeux-grille-cpp.png",
+    "likes": 0
+  },
+  {
+    "id": "Projet Pac-Man | C, SDL3",
+    "title": "Projet Pac-Man | C, SDL3",
+    "description": "Remake de Pac-Man en C avec SDL3, réalisé en équipe au CNAM : création des niveaux, Makefile, workflow Git et planification sous Trello.",
+    "imageURL": "../assets/images/projet-pacman-c-sdl3.png",
+    "likes": 0
+  },
+  {
+    "id": "Projet Rogue-Man | Unity, C#",
+    "title": "Projet Rogue-Man | Unity, C#",
+    "description": "Roguelike développé sous Unity (C#), inspiré de Pac-Man, avec des sprites réalisés sous Aseprite.",
+    "imageURL": "../assets/images/projet-rogue-man-unity.png",
+    "likes": 0
+  },
   {
     "id": "Projet Site E-Commerce | Angular",
     "title": "Projet Site E-Commerce | Angular",
     "description": "Application e-commerce développée en Angular permettant de naviguer dans un catalogue d’instruments de musique, d’ajouter des articles au panier, de les modifier ou les retirer. L’interface fluide et responsive offre une expérience utilisateur intuitive.",
     "imageURL": "../assets/images/projet-site-e-commerce.png",
-    "projectLink":"https://github.com/Ricdrum14/TP05_ANNIS_Ricardo",
+    "projectLink": "https://github.com/Ricdrum14/TP05_ANNIS_Ricardo",
     "optionalLink": "https://cnamapp-o53x.onrender.com",
     "likes": 9
-  },{
+  },
+  {
     "id": "Projet Site Portfolio | Angular",
     "title": "Projet Site Portfolio | Angular",
     "description": "Portfolio moderne développé avec Angular pour présenter mes projets, compétences et parcours. Interface fluide, responsive, et animations soignées pour une vitrine professionnelle élégante.",
@@ -16,38 +44,38 @@
     "projectLink": "https://github.com/Ricdrum14/portfolio-Ricardo",
     "optionalLink": "https://portfolio-ric-app.onrender.com",
     "likes": 20
-  },{
+  },
+  {
     "id": "Projet Site Portfolio | PHP, JavaScript",
     "title": "Projet Site Portfolio | PHP, JavaScript",
-    "description":"Portfolio en ligne interactif développé pour présenter mes projets, compétences et parcours. Responsive, moderne et conçu comme une vitrine professionnelle avec navigation fluide et design soigné.",
+    "description": "Portfolio en ligne interactif développé pour présenter mes projets, compétences et parcours. Responsive, moderne et conçu comme une vitrine professionnelle avec navigation fluide et design soigné.",
     "imageURL": "../assets/images/portfolio-php.png",
     "projectLink": "https://git.unistra.fr/rannis/ricardo-annis",
     "optionalLink": "https://www.ricardoannisworks.com/projects.php",
     "likes": 6
   },
-    {
-      "id": "Projet Graphe Dual D'un Maillage | C",
-      "title": "Projet Graphe Dual D'un Maillage | C",
-      "description": "Graphe Dual d'un Maillage : Projet en C réalisé avec Inamullah Samoon. Il consiste à générer et visualiser des graphes duaux à partir de maillages géométriques, avec des algorithmes de parcours et d’analyse topologique avancée.",
-      "imageURL": "../assets/images/projet-graphe-dual-de-maillage.png",
-      "projectLink": "https://git.unistra.fr/samoon/graphe-dual-d-un-maillage-projet",
-      "likes": 16
-    },
-    {
-      "id": "Projet Jeu de Mots Croisés | Java",
-      "title": "Projet Jeu de Mots Croisés | Java",
-      "description": "Mots Croisés en Java : Un jeu interactif développé avec Inamullah Samoon. Il génère dynamiquement des grilles de mots croisés avec une interface graphique intuitive. Ce projet met en œuvre la POO pour combiner logique, linguistique et plaisir.",
-      "imageURL": "../assets/images/projet-mot-croise.png",
-      "projectLink": "https://git.unistra.fr/samoon/projet_mots_croise_poo",
-      "likes": 4
-    },
-    {
-      "id": "Projet Jeu Sokoban | C",
-      "title": "Projet Jeu Sokoban | C",
-      "description": "Sokoban : Un jeu de réflexion en C développé en L2, où le joueur déplace des caisses dans un entrepôt selon des commandes clavier. Réalisé avec Sirine Amari à l’UFR Math-Info de Strasbourg, il propose un mode console et une version graphique en SDL.",
-      "imageURL": "../assets/images/projet-sokoban.png",
-      "projectLink": "https://git.unistra.fr/rannis/project_sokoban_sirine_et_ricardo",
-      "likes": 5
-    }
-  ]
-  
+  {
+    "id": "Projet Graphe Dual D'un Maillage | C",
+    "title": "Projet Graphe Dual D'un Maillage | C",
+    "description": "Graphe Dual d'un Maillage : Projet en C réalisé avec Inamullah Samoon. Il consiste à générer et visualiser des graphes duaux à partir de maillages géométriques, avec des algorithmes de parcours et d’analyse topologique avancée.",
+    "imageURL": "../assets/images/projet-graphe-dual-de-maillage.png",
+    "projectLink": "https://git.unistra.fr/samoon/graphe-dual-d-un-maillage-projet",
+    "likes": 16
+  },
+  {
+    "id": "Projet Jeu de Mots Croisés | Java",
+    "title": "Projet Jeu de Mots Croisés | Java",
+    "description": "Mots Croisés en Java : Un jeu interactif développé avec Inamullah Samoon. Il génère dynamiquement des grilles de mots croisés avec une interface graphique intuitive. Ce projet met en œuvre la POO pour combiner logique, linguistique et plaisir.",
+    "imageURL": "../assets/images/projet-mot-croise.png",
+    "projectLink": "https://git.unistra.fr/samoon/projet_mots_croise_poo",
+    "likes": 4
+  },
+  {
+    "id": "Projet Jeu Sokoban | C",
+    "title": "Projet Jeu Sokoban | C",
+    "description": "Sokoban : Un jeu de réflexion en C développé en L2, où le joueur déplace des caisses dans un entrepôt selon des commandes clavier. Réalisé avec Sirine Amari à l’UFR Math-Info de Strasbourg, il propose un mode console et une version graphique en SDL.",
+    "imageURL": "../assets/images/projet-sokoban.png",
+    "projectLink": "https://git.unistra.fr/rannis/project_sokoban_sirine_et_ricardo",
+    "likes": 5
+  }
+]
